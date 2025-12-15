@@ -1,8 +1,8 @@
 import request from "supertest";
-import { app } from "../app";
+import { app } from "../app"; // Adjust the import path as necessary
 import { describe } from "node:test";
 
-describe("GET /api/analytics/sales", () => {
+describe("GET /api/sales", () => {
   it("returns sales data", async () => {
     const res = await request(app).get("/api/analytics/sales");
 
